@@ -2,10 +2,23 @@
 
 
 nome = input("Digite seu nome completo: ")
+nome = nome.lower()
+nome = nome.replace(" ", "")
 
-texto = nome.split()
+vogais = "aeiou"
+consoantes = "bcdfghjlmnpqrstvxzyw"
 
-print("Primeiro nome: {} -- último nome {}".format (texto[0], texto[-1]))
+if nome[0] in vogais:
+    print("O primeiro nome comeca com vogal")
+if nome[-1] in consoantes:
+    print("O ultimo nome termina com consoante")
+else:
+    print("neutro")
+
+
+#texto = nome.split()
+
+#print("Primeiro nome: {} -- último nome {}".format (texto[0], texto[-1]))
 
 #print("Nome em maiúsculas:", nome.upper())
 
